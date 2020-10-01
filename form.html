@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration Form</title>
+        <link rel="stylesheet" href="css/form_style.css">
+    </head>
+    <body>
+        <div id='container'>
+            <h1>Registration Form</h1>
+            <p>Fill out the form carefully.</p>
+            <form message='post' action="process.php">
+                <ul>
+                    <li>
+                        <label for="roll_no">PRN:</label>
+                        <input roll='roll_no' type='number'>
+                        <br>
+                        <br>
+                    </li>
+                    <li>
+                        <label for="class">Branch:</label>
+                        <select name="class">
+                            <option value="cs">Computer</option>
+                            <option value="it">Information Technology</option>
+                            <option value="elex">Electronics</option>
+                            <option value="mech">Mechinal</option>
+                            <option value="chem">Chemical</option>
+                            <option value="elec">Electrical</option>
+                            <option value="civil">Civil</option>
+                        </select>
+                        <br>
+                        <br>
+                    </li>
+                    <li>
+                        <label for="first_name">Full Name:</label>
+                        <input name='first_name' type='text'>
+                        <br>
+                        <br>
+                    </li>
+                    <li>
+                        <label for="birth_date">Birth Date:</label>
+                        <input name='birth_date' type="date"/>
+                        <br>
+                        <br>
+                    </li>
+                    <li>
+                        <label for="gender">Gender:</label>
+                        <input name='gender' type='radio' value='Male'/>Male
+                        &nbsp;
+                        <input name='gender' type='radio' value='Female'/>Female
+                        &nbsp;
+                        <input name='gender' type='radio' value='Others'/>Other
+                        <br>
+                        <br>
+                    </li>
+                    <li>
+                        <label for="contact">Contact:</label>
+                        <input name='contact' type="tel">
+                        <br>
+                        <br>
+                    </li>
+                    <li>
+                        <label for="email">E-Mail:</label>
+                        <input name='email' type="email" value="ex: unique@gmail.com">
+                        <br>
+                        <br>
+                    </li>
+                    <li>
+                        <label for="address">Address:</label>
+                        <textarea name="address" ></textarea>
+                        <br>
+                        <br>
+                    </li>
+                    <li>
+                        <label for="photo">Photo(optional):</label>
+                        <input name='photo' type="file" value='Choose File'>
+                        <br>
+                        <br>
+                    </li>
+                    <input type="submit" value='Submit'>
+                    &nbsp;
+                    <input type="button" value='Print Form'>
+                </ul>
+            </form>
+        </div>
+    </body>
+</html>
